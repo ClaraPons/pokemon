@@ -8,6 +8,7 @@ const App = () => {
 
   useEffect(() => {
     fetchData()
+    // eslint-disable-next-line
     }, [pokemonRandom])
 
   const fetchData = async () => {
@@ -18,7 +19,7 @@ const App = () => {
 
   const handleRandomPokemon = () => {
     const random = Math.floor(Math.random() * 151) + 1
-    setPokemonRandom(`https://pokeapi.co/api/v2/pokemon/${random}`)
+    setPokemonRandom (`https://pokeapi.co/api/v2/pokemon/${random}`)
   }
 
   if(pokemon === null){
@@ -49,3 +50,5 @@ const App = () => {
 
 
 export default App;
+
+
