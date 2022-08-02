@@ -27,22 +27,23 @@ const App = () => {
   }
   return (
     <div className="App">
-      <div className='card-pokemon'>
-      <img className="pokemon" src={pokemon.sprites.front_default} alt='pokemon'></img>
-      <div className='text-pokemon'>
-      <h1 className='title'>{pokemon.name}</h1>
-      <p><strong>Height :</strong> {pokemon.height}</p>
-      <p><strong>Weight :</strong> {pokemon.weight}</p>
-      <p><strong>Types :</strong></p>
-      {pokemon.types.map((type) => {
-      return(
-        <ul>
-          <li>{type.type.name}</li>
-        </ul>
-        )
-      })}
-      </div>
-      </div>
+        <div className='pokemon-title'>POKEMON</div>
+          <div className='card-pokemon'>
+            <img className="pokemon" src={pokemon.sprites.other.home.front_default} alt='pokemon'></img>
+            <div className='text-pokemon'>
+            <h1 className='title'>{pokemon.name}</h1>
+            <p><strong>Height :</strong> {pokemon.height}</p>
+            <p><strong>Weight :</strong> {pokemon.weight}</p>
+            <p><strong>Types :</strong></p>
+            {pokemon.types.map((type) => {
+            return(
+              <ul>
+                <li>{type.type.name}</li>
+              </ul>
+              )
+            })}
+          </div>
+        </div>
       <button className='button-random' onClick={handleRandomPokemon}>Show random pokemon</button>
     </div>
   );
