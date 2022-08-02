@@ -19,7 +19,7 @@ body{
 }
 
 .pokemon{
-  width: 220px;
+  width: 200px;
 }
 
 .text-pokemon{
@@ -39,7 +39,7 @@ body{
 .button-random{
   background-color: #81e6d9;
   border: 1px solid rgb(26, 32, 44);
-  padding: 12px 65px;
+  padding: 10px 27px;
   font-size: 20px;
   font-weight: 800;
   border-radius: 5px;
