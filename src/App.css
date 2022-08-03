@@ -4,7 +4,11 @@
 }
 
 body{
-  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
+  background-image: url("https://media.giphy.com/media/1yld7nW3oQ2IyRubUm/giphy.gif");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
     margin-bottom: 160px;
     font-family: 'oswald', Arial, Helvetica, sans-serif;
 }
@@ -21,10 +25,13 @@ body{
 .card-pokemon{
   display: flex;
   flex-direction: column;
-  border: 0.1em solid white;
+  border: 0.1em solid rgba(255,255,255, .01);
   margin: 15px 0px 30px;
   padding: 20px 40px;
   border-radius: 10px;
+  height: 450px;
+  backdrop-filter: blur(50px);
+  background-color:rgba(255,255,255, .01);
 }
 
 .pokemon{
@@ -53,8 +60,9 @@ body{
 }
 
 .button-random{
-  background-color: black;
-  border: 2px solid black;
+  background-color: rgba(255,255,255, .01);
+  backdrop-filter: blur(50px);
+  border: 2px solid white;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: 800;
@@ -66,7 +74,7 @@ body{
   background-color: transparent;
   color: white;
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255, .01);
 }
 
 
